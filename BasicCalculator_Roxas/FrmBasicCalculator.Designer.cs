@@ -41,36 +41,36 @@
             // 
             // txtInput1
             // 
-            this.txtInput1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInput1.Location = new System.Drawing.Point(227, 129);
             this.txtInput1.Name = "txtInput1";
-            this.txtInput1.Size = new System.Drawing.Size(104, 26);
+            this.txtInput1.Size = new System.Drawing.Size(104, 33);
             this.txtInput1.TabIndex = 0;
             // 
             // txtInput2
             // 
-            this.txtInput2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInput2.Location = new System.Drawing.Point(227, 195);
             this.txtInput2.Name = "txtInput2";
-            this.txtInput2.Size = new System.Drawing.Size(104, 26);
+            this.txtInput2.Size = new System.Drawing.Size(104, 33);
             this.txtInput2.TabIndex = 1;
             // 
             // cmbOperator
             // 
-            this.cmbOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbOperator.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperator.FormattingEnabled = true;
             this.cmbOperator.Location = new System.Drawing.Point(246, 161);
             this.cmbOperator.Name = "cmbOperator";
-            this.cmbOperator.Size = new System.Drawing.Size(67, 28);
+            this.cmbOperator.Size = new System.Drawing.Size(67, 29);
             this.cmbOperator.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(40, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.Size = new System.Drawing.Size(137, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Basic Calculator";
             // 
@@ -80,7 +80,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label2.Location = new System.Drawing.Point(3, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "Total:";
             // 
@@ -90,7 +90,7 @@
             this.txtDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.txtDisplay.Location = new System.Drawing.Point(72, 29);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(49, 20);
+            this.txtDisplay.Size = new System.Drawing.Size(46, 21);
             this.txtDisplay.TabIndex = 5;
             this.txtDisplay.Text = "0000";
             // 
@@ -99,7 +99,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtDisplay);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(192, 256);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(193, 75);
@@ -107,19 +107,21 @@
             // 
             // btnCompute
             // 
-            this.btnCompute.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompute.BackColor = System.Drawing.Color.Gray;
+            this.btnCompute.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.Location = new System.Drawing.Point(236, 354);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(105, 33);
             this.btnCompute.TabIndex = 7;
             this.btnCompute.Text = "Compute";
-            this.btnCompute.UseVisualStyleBackColor = true;
+            this.btnCompute.UseVisualStyleBackColor = false;
             this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
             // 
             // FrmBasicCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(489, 450);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.panel1);
