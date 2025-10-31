@@ -50,7 +50,7 @@
             // txtInput2
             // 
             this.txtInput2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput2.Location = new System.Drawing.Point(227, 195);
+            this.txtInput2.Location = new System.Drawing.Point(227, 203);
             this.txtInput2.Name = "txtInput2";
             this.txtInput2.Size = new System.Drawing.Size(104, 33);
             this.txtInput2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.cmbOperator.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperator.FormattingEnabled = true;
-            this.cmbOperator.Location = new System.Drawing.Point(246, 161);
+            this.cmbOperator.Location = new System.Drawing.Point(243, 168);
             this.cmbOperator.Name = "cmbOperator";
             this.cmbOperator.Size = new System.Drawing.Size(67, 29);
             this.cmbOperator.TabIndex = 2;
