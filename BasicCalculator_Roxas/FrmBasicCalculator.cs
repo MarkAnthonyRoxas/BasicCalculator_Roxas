@@ -1,0 +1,86 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using CalculatorPrivateAssembly;
+
+namespace BasicCalculator_Roxas
+{
+    public partial class FrmBasicCalculator : Form
+    {
+        public FrmBasicCalculator()
+        {
+            InitializeComponent();
+            InitializeComboBox();
+        }
+        private void InitializeComboBox()
+        {
+ 
+            cmbOperator.Items.Add("+");
+            cmbOperator.Items.Add("-");
+            cmbOperator.Items.Add("*");
+            cmbOperator.Items.Add("/");
+            cmbOperator.SelectedIndex = 0; 
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Get the numerical inputs and operator
+                float num1 = float.Parse(txtInput1.Text);
+                float num2 = float.Parse(txtInput2.Text);
+                string selectedOperator = cmbOperator.SelectedItem.ToString();
+                float result = 0;
+
+                // 2. Call the static methods from the BasicComputation class (Step 6)
+                switch (selectedOperator)
+                {
+                    case "+":
+                        result = BasicComputation.Add(num1, num2);
+                        break;
+                    case "-":
+                        result = BasicComputation.Subtract(num1, num2);
+                        break;
+                    case "*":
+                        result = BasicComputation.Multiply(num1, num2);
+                        break;
+                    case "/":
+                        result = BasicComputation.Divide(num1, num2);
+                        break;
+                    default:
+                        txtDisplay.Text = "Error: Invalid Operator";
+                        return;
+                }
+
+                // Display the result in the dedicated text box (e.g., txtDisplay)
+                // Set the formatting to match the sample output's style (green text on black background)
+                txtDisplay.Text = result.ToString("N0");
+
+                // Note: To achieve the exact "000000" padded style from the figure, 
+                // you would use result.ToString("000000") but for float calculations, 
+                // using a standard number format is more practical for a calculator.
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter valid numerical input in both fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDisplay.Text = "Error";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDisplay.Text = "Error";
+            }
+        }
+    }
+}
