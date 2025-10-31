@@ -36,13 +36,13 @@ namespace BasicCalculator_Roxas
         {
             try
             {
-                // Get the numerical inputs and operator
+              
                 float num1 = float.Parse(txtInput1.Text);
                 float num2 = float.Parse(txtInput2.Text);
                 string selectedOperator = cmbOperator.SelectedItem.ToString();
                 float result = 0;
 
-                // 2. Call the static methods from the BasicComputation class (Step 6)
+             
                 switch (selectedOperator)
                 {
                     case "+":
@@ -62,13 +62,10 @@ namespace BasicCalculator_Roxas
                         return;
                 }
 
-                // Display the result in the dedicated text box (e.g., txtDisplay)
-                // Set the formatting to match the sample output's style (green text on black background)
+               
                 txtDisplay.Text = result.ToString("N0");
 
-                // Note: To achieve the exact "000000" padded style from the figure, 
-                // you would use result.ToString("000000") but for float calculations, 
-                // using a standard number format is more practical for a calculator.
+               
 
             }
             catch (FormatException)
